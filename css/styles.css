@@ -1,0 +1,171 @@
+body {
+    background-color: #100f0f;
+    font-family: "Montserrat", "Inter", sans-serif;
+    color: #f3f3f3;
+    margin: 0;
+  }
+  
+  a {
+    text-decoration: none;
+    font-style: normal;
+    color: inherit;
+  }
+  
+  ul,
+  ol {
+    list-style-type: none;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-left: 0;
+  }
+  
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  p {
+    margin: 0;
+  }
+  
+  img {
+    display: block;
+    max-width: 100%;
+    object-fit: cover;
+    max-height: 100%;
+  }
+  
+  button {
+    display: block;
+    padding: 0;
+    cursor: pointer;
+    font-family: inherit;
+    color: inherit;
+  }
+  
+  .container {
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 0 15px;
+  }
+
+  /* #region Header */
+.header {
+    padding: 12px 17px 12px 0;
+    background-image: linear-gradient(270deg, #6f6666 0%, #100f0f 80%);
+}
+
+.header-container {
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    margin-right: auto;
+    height: 32px;
+    font-weight: 700;
+font-size: 20px;
+text-transform: uppercase;
+}
+
+.logo-icon {
+    fill: #f3f3f3;
+}
+
+.nav {
+    display: none;
+}
+
+.header-btn {
+    display: none;
+}
+.menu-btn {
+    width: 31px;
+    height: 18px;
+    border: none;
+    background-color: transparent;
+}
+
+.btn-icon {
+    stroke: #f3f3f3;
+    stroke-width: 1px;
+}
+
+  /* #endregion Header */
+
+.hero {
+    height: 637px;
+    padding: 24px 0 39px 0;
+    background-image: url(../images/Frame\ 74.svg), linear-gradient(235deg, #6f6666 0%, #100f0f 38%);
+    background-repeat: no-repeat;
+    background-position: left center;
+
+
+ 
+
+}
+
+.hero-container {
+    position: relative;
+}
+
+/* .hero-container {
+    display: flex;
+    flex-wrap: wrap;
+} */
+.hero-title {
+  font-weight: 500;
+  font-size: 30px;
+  margin-bottom: 16px;
+}
+
+.hero-wrapper {
+    padding-top: 16px;
+    margin-right: auto;
+    width: 193px;
+}
+
+
+.hero-text {
+    max-width: 100px;
+font-size: 16px;
+}
+
+.love {
+    font-weight: 300;
+}
+
+.span {
+    display: block;
+    letter-spacing: -0.01em;
+    margin-bottom: 228px;
+}
+
+.hero-img {
+    max-width: 202px;
+    max-height: 350px;
+    position: absolute;
+    top: 0;
+    right: 15px;
+}
+.hero-btn {
+    border-radius: 16px;
+padding: 26px 116px;
+width: 384px;
+height: 66px;
+background-color: rgba(188, 26, 26, 0.2);
+font-size: 20px;
+color: #f3f3f3;
+}
+.hero-list {
+}
+.hero-span {
+}
+.properties {
+}
+
+  
