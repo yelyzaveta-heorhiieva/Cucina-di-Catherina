@@ -61,8 +61,22 @@
                         </li>
                     </ul>
                 </div>
-                <img class="hero-img" src="./images/ketchup.png" alt="bottle of sauce" width="221" height="356">
-            
+                <picture>
+                    <source
+                    srcset="
+                      ./images/hero.png       1x
+                    "
+                    media="(min-width: 1024px)"
+                  />
+                  <source
+                    srcset="
+                      ./images/ketchup.png
+                    "
+                    media="(max-width: 1023px)"
+                  />
+               
+                <img class="hero-img" src="./images/ketchup.png" alt="bottle of sauce" width="432" height="579">
+                </picture>
                 <ul class="social-media">
                     <li>
                         <a class="social-link" href="">
