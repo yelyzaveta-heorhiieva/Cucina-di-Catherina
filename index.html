@@ -1,148 +1,326 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Cucina-di-Catherina</title>
     <link
       rel="stylesheet"
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:opsz@14..32&family=Montserrat:wght@100..900&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+      <link
+      rel="preconnect"
+      href="https://fonts.googleapis.com"
+    />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:opsz@14..32&family=Montserrat:wght@100..900&family=Roboto:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.min.css"
     />
-    <link rel="stylesheet" href="./css/styles.css">
-</head>
-<body>
+    <link rel="stylesheet" href="./css/styles.css" />
+  </head>
+  <body>
     <header class="header">
-        <div class="container header-container">
-            <a class="logo" href="./index.html">
-                <svg class="logo-icon" width="32" height="32">
-                    <use href="./icons.svg#logo"></use>
-                </svg>
-                CUCINA
-            </a>
-            <nav class="nav">
-                <ul class="nav-list">
-                    <li><a class="nav-link" href="./index.html">Home</a></li>
-                    <li><a class="nav-link" href="">Store</a></li>
-                    <li><a class="nav-link" href="">Recipes</a></li>
-                    <li><a class="nav-link" href="">Gallery</a></li>
-                </ul>
-            </nav>
-            <button class="header-btn" type="button">Contact us</button>
-            <button class="menu-btn" type="button">
-                <svg width="31" height="18" class="btn-icon">
-                    <use href="./icons.svg#menu"></use>
-                </svg>
-            </button>
-        </div>
+      <div class="container header-container">
+        <a class="logo" href="./index.html">
+          <svg class="logo-icon" width="32" height="32">
+            <use href="./icons.svg#logo"></use>
+          </svg>
+          CUCINA
+        </a>
+        <nav class="nav">
+          <ul class="nav-list">
+            <li><a class="nav-link" href="./index.html">Home</a></li>
+            <li><a class="nav-link" href="">Store</a></li>
+            <li><a class="nav-link" href="">Recipes</a></li>
+            <li><a class="nav-link" href="">Gallery</a></li>
+          </ul>
+        </nav>
+        <button class="header-btn" type="button">Contact us</button>
+        <button class="menu-btn" type="button">
+          <svg width="31" height="18" class="btn-icon">
+            <use href="./icons.svg#menu"></use>
+          </svg>
+        </button>
+      </div>
     </header>
     <main>
-        <section class="hero">
-            <div class="container hero-container">
-                <div class="hero-wrapper">
-                    <h1 class="hero-title">CUCINA DI 
-                        CATHERINA</h1>
-                    <p class="hero-text">We know,</p><span class="span">you will <span class="love">love</span> our product</span>
-                    <button class="hero-btn" type="button">Buy now</button>
-                    <ul class="hero-list">
-                        <li class="hero-list-item">
-                            <span class="hero-span">14 </span>
-                            <p class="properties">different tastes</p>
-                        </li>
-                        <li><span class="hero-list-span"></span></li>
-                        <li class="hero-list-item">
-                            <span class="hero-span">31</span>
-                            <p class="properties">factories around
-                                the world</p>
-                        </li>
-                    </ul>
-                </div>
+      <section class="hero">
+        <div class="container hero-container">
+          <div class="hero-wrapper">
+            <h1 class="hero-title">CUCINA DI CATHERINA</h1>
+            <p class="hero-text">We know,</p>
+            <span class="span"
+              >you will <span class="love">love</span> our product</span
+            >
+            <button class="hero-btn" type="button">Buy now</button>
+            <ul class="hero-list">
+              <li class="hero-list-item">
+                <span class="hero-span">14 </span>
+                <p class="properties">different tastes</p>
+              </li>
+              <li><span class="hero-list-span"></span></li>
+              <li class="hero-list-item">
+                <span class="hero-span">31</span>
+                <p class="properties">factories around the world</p>
+              </li>
+            </ul>
+          </div>
+          <picture>
+            <source srcset="./images/hero.png 1x" media="(min-width: 1020px)" />
+            <source srcset="./images/ketchup.png" media="(max-width: 1019px)" />
+
+            <img
+              class="hero-img"
+              src="./images/ketchup.png"
+              alt="bottle of sauce"
+              width="432"
+              height="579"
+            />
+          </picture>
+          <ul class="social-media">
+            <li>
+              <a class="social-link" href="">
+                <svg class="social-icon" width="16" height="16">
+                  <use href="./icons.svg#tumblr"></use>
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a class="social-link" href="">
+                <svg class="social-icon" width="16" height="16">
+                  <use href="./icons.svg#instagram"></use>
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a class="social-link" href="">
+                <svg class="social-icon" width="16" height="16">
+                  <use href="./icons.svg#youtube"></use>
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a class="social-link" href="">
+                <svg class="social-icon" width="16" height="16">
+                  <use href="./icons.svg#twitter"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="products">
+        <div class="container products-container">
+          <h2 class="visually-hidden">Features</h2>
+          <button type="button" class="top-btn">
+            <svg class="vector" width="12" height="6">
+              <use href="./images/symbol-defs.svg#btn"></use>
+            </svg>
+          </button>
+          <div class="slider">
+            <ul class="products-list">
+              <li class="products-list-item">
                 <picture>
-                    <source
-                    srcset="
-                      ./images/hero.png       1x
-                    "
-                    media="(min-width: 1024px)"
+                  <source
+                    srcset="./images/tab/tomatos-tab.jpg 1x"
+                    media="(min-width: 1020px)"
                   />
                   <source
-                    srcset="
-                      ./images/ketchup.png
-                    "
-                    media="(max-width: 1023px)"
+                    srcset="./images/tomatos.jpg"
+                    media="(max-width: 1019px)"
                   />
-               
-                <img class="hero-img" src="./images/ketchup.png" alt="bottle of sauce" width="432" height="579">
+                  <img
+                    src="./images/tomatos.jpg"
+                    alt="tomatos"
+                    width="156"
+                    height="156"
+                  />
                 </picture>
-                <ul class="social-media">
-                    <li>
-                        <a class="social-link" href="">
-                            <svg class="social-icon" width="16" height="16">
-                                <use href="./icons.svg#tumblr"></use>
-                            </svg>
-                        </a>
-                    </li>
-                    <li>
-                        <a class="social-link" href="">
-                            <svg class="social-icon" width="16" height="16">
-                                <use href="./icons.svg#instagram"></use>
-                            </svg>
-                        </a>
-                    </li>
-                    <li>
-                        <a class="social-link" href="">
-                            <svg class="social-icon" width="16" height="16">
-                                <use href="./icons.svg#youtube"></use>
-                            </svg>
-                        </a>
-                    </li>
-                    <li>
-                        <a class="social-link" href="">
-                            <svg class="social-icon" width="16" height="16">
-                                <use href="./icons.svg#twitter"></use>
-                            </svg>
-                        </a>
-                    </li>
-                </ul>
-            </div>
-        </section>
 
-        <section class="features">
-            <div class="container">
-                <h2 class="visually-hidden">Features</h2>
-                <ul class="features-list">
-                    <li class="features-list-item">
-                        <div class="img-container">
-                            <img src="./images/tomato.png" alt="tomatos" width="206" height="206">
-                            <img src="./images/sauce.png" alt="sauce" width="206" height="206">
-                            <img src="./images/tomato-sauce.png" alt="tomato sauce" width="206" height="206">
-                        </div>
-                        <div class="features-wrapper">
-                            <h3 class="features-title">Classic sauce</h3>
-                            <p class="features-text">The most delicate taste of tomatoes, combined with branded spices and white wine, will make your dish incredibly tasty.</p>
-                            <button class="features-btn" type="button">Buy now</button>
-                        </div>
-                    </li>
-                    <li class="features-list-item">
-                    <div class="img-container">
-                        <img src="./images/peper.png" alt="peper" width="206" height="206">
-                        <img src="./images/peper-sauce.png" alt="peper sauce" width="206" height="206">
-                        <img src="./images/sauce-spoon.png" alt="sauce in spoon" width="206" height="206">
-                    </div>
-                        <div class="features-wrapper">
-                            <h3 class="features-title">Spicy sauce</h3>
-                            <p class="features-text">For thrill-seekers, we added hot chili pepper to our sauce, it also reveals all the tastes and aromas of the sauce well.</p>
-                            <button class="features-btn" type="button">Buy now</button>
-                        </div>
-                    </li>
-                </ul>
-            </div>
-        </section>
+                <div class="products-wrapper">
+                  <h3 class="products-title">Classic sauce</h3>
+                  <p class="products-text">
+                    The most delicate taste of tomatoes, combined with branded
+                    spices and white wine, will make your dish incredibly tasty.
+                  </p>
+                  <button class="products-btn" type="button">Buy now</button>
+                </div>
+              </li>
+              <li class="products-list-item">
+                <picture>
+                  <source
+                    srcset="./images/tab/peper-tab.jpg 1x"
+                    media="(min-width: 1020px)"
+                  />
+                  <source
+                    srcset="./images/peper.jpg"
+                    media="(max-width: 1019px)"
+                  />
+                  <img
+                    src="./images/peper.jpg"
+                    alt="peper"
+                    width="156"
+                    height="156"
+                  />
+                </picture>
+
+                <div class="products-wrapper">
+                  <h3 class="products-title">Spicy sauce</h3>
+                  <p class="products-text">
+                    For thrill-seekers, we added hot chili pepper to our sauce,
+                    it also reveals all the tastes and aromas of the sauce well.
+                  </p>
+                  <button class="products-btn" type="button">Buy now</button>
+                </div>
+              </li>
+            </ul>
+            <ul class="products-list">
+              <li class="products-list-item">
+                <picture>
+                  <source
+                    srcset="./images/tab/sauce-tab.jpg 1x"
+                    media="(min-width: 1020px)"
+                  />
+                  <source
+                    srcset="./images/sauce.jpg"
+                    media="(max-width: 1019px)"
+                  />
+                  <img
+                    src="./images/sauce.jpg"
+                    alt="sauce"
+                    width="156"
+                    height="156"
+                  />
+                </picture>
+
+                <div class="products-wrapper">
+                  <h3 class="products-title">Classic sauce</h3>
+                  <p class="products-text">
+                    The most delicate taste of tomatoes, combined with branded
+                    spices and white wine, will make your dish incredibly tasty.
+                  </p>
+                  <button class="products-btn" type="button">Buy now</button>
+                </div>
+              </li>
+              <li class="products-list-item">
+                <picture>
+                  <source
+                    srcset="./images/tab/peper-sauce-tab.jpg 1x"
+                    media="(min-width: 1020px)"
+                  />
+                  <source
+                    srcset="./images/peper-sauce.jpg"
+                    media="(max-width: 1019px)"
+                  />
+                  <img
+                    src="./images/peper-sauce.jpg"
+                    alt="peper sauce"
+                    width="156"
+                    height="156"
+                  />
+                </picture>
+
+                <div class="products-wrapper">
+                  <h3 class="products-title">Spicy sauce</h3>
+                  <p class="products-text">
+                    For thrill-seekers, we added hot chili pepper to our sauce,
+                    it also reveals all the tastes and aromas of the sauce well.
+                  </p>
+                  <button class="products-btn" type="button">Buy now</button>
+                </div>
+              </li>
+            </ul>
+            <ul class="products-list">
+              <li class="products-list-item">
+                <picture>
+                  <source
+                    srcset="./images/tab/tomato-sauce-tab.jpg 1x"
+                    media="(min-width: 1020px)"
+                  />
+                  <source
+                    srcset="./images/tomato-sauce.jpg"
+                    media="(max-width: 1019px)"
+                  />
+                  <img
+                    src="./images/tomato-sauce.jpg"
+                    alt="tomato sauce"
+                    width="156"
+                    height="156"
+                  />
+                </picture>
+
+                <div class="products-wrapper">
+                  <h3 class="products-title">Classic sauce</h3>
+                  <p class="products-text">
+                    The most delicate taste of tomatoes, combined with branded
+                    spices and white wine, will make your dish incredibly tasty.
+                  </p>
+                  <button class="products-btn" type="button">Buy now</button>
+                </div>
+              </li>
+              <li class="products-list-item">
+                <picture>
+                  <source
+                    srcset="./images/tab/sause-spoon-tab.jpg 1x"
+                    media="(min-width: 1020px)"
+                  />
+                  <source
+                    srcset="./images/sauce-in-spoon.jpg"
+                    media="(max-width: 1019px)"
+                  />
+                  <img
+                    src="./images/sauce-in-spoon.jpg"
+                    alt="sauce in spoon"
+                    width="156"
+                    height="156"
+                  />
+                </picture>
+
+                <div class="products-wrapper">
+                  <h3 class="products-title">Spicy sauce</h3>
+                  <p class="products-text">
+                    For thrill-seekers, we added hot chili pepper to our sauce,
+                    it also reveals all the tastes and aromas of the sauce well.
+                  </p>
+                  <button class="products-btn" type="button">Buy now</button>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <button type="button" class="bottom-btn">
+            <svg class="vector" width="12" height="6">
+              <use href="./images/symbol-defs.svg#btn"></use>
+            </svg>
+          </button>
+        </div>
+      </section>
+
+      <section class="recipes">
+        <div class="container">
+          <h2 class="visually-hidden">Recipes</h2>
+          <ul class="recipes-list">
+            <li class="recipes-list-item">
+              <h3 class="recipes-title">Tomato paste</h3>
+              <iframe
+                src="https://www.youtube.com/watch?v=s93zP7eHTCo"
+                frameborder="0"
+                width="246"
+                height="235"
+                allowfullscreen
+                allow="accelerometr; autoplay; encrypted-media; gyroscope; picture-in-picture"
+              ></iframe>
+            </li>
+            <li class="recipes-list-item">
+              <h3 class="recipes-title">Bell paper paste</h3>
+              <iframe src="" frameborder="0"></iframe>
+            </li>
+          </ul>
+        </div>
+      </section>
     </main>
-
-
-</body>
+  </body>
 </html>
