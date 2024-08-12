@@ -328,6 +328,10 @@ button {
 }
 /* #endregion Products */
 
+.video {
+  border-radius: 8px;
+}
+
 @media screen and (min-width: 1020px) {
   .container {
     padding: 0 47px;
