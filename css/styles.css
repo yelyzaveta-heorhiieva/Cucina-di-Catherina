@@ -328,8 +328,33 @@ button {
 }
 /* #endregion Products */
 
+.recipes {
+  padding: 20px 0;
+}
+
+.recipes-list {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
+  gap: 40px;
+}
+
+.recipes-list-item:last-child {
+  align-self: flex-start;
+}
 .video {
   border-radius: 8px;
+}
+.play-icon {
+  fill: #100f0f;
+}
+
+.recipes-title {
+  font-weight: 400;
+  font-size: 20px;
+  color: #fff;
+  text-align: center;
 }
 
 @media screen and (min-width: 1020px) {
