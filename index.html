@@ -41,7 +41,7 @@
         </button>
       </div>
 
-      <div class="header-menu is-open">
+      <!-- <div class="header-menu is-open">
         <div class="menu">
           <div class="menu-top">
             <a class="logo-menu" href="./index.html">
@@ -64,7 +64,7 @@
           </ul>
           <button class="contact-btn" type="button">Contact us</button>
         </div>
-      </div>
+      </div> -->
     </header>
     <main>
       <section class="hero">
@@ -456,6 +456,110 @@
           </button>
         </div>
       </section>
+
+      <div class="ordering-overflay is-open">
+        <div class="ordering">
+          <button class="close-btn mark" type="button">
+            <svg class="close-icon" width="18" height="18">
+              <use href="./images/icons.svg#close"></use>
+            </svg>
+          </button>
+          <p class="ordering-title">Your ordering</p>
+          <form
+            class="order-form"
+            name="order-form"
+            autocomplete="off"
+            novalidate
+          >
+            <fieldset class="form-field">
+              <legend class="legend">Contacts</legend>
+              <label class="order-label">
+                Surname
+                <input
+                  class="order-input"
+                  type="text"
+                  placeholder="Krutas"
+                  name="user-surname"
+                />
+              </label>
+              <label class="order-label">
+                Name
+                <input
+                  class="order-input"
+                  type="text"
+                  placeholder="Yuliia"
+                  name="user-name"
+              /></label>
+              <label class="order-label"
+                >Telephone<input
+                  class="order-input"
+                  type="tel"
+                  name="user-tel"
+                  placeholder="+380"
+              /></label>
+              <label class="order-label"
+                >City<select class="order-input select" name="city">
+                  <option value="Chernihiv">Chernihiv</option>
+                  <option value="Dnipro">Dnipro</option>
+                  <option value="Kharkiv">Kharkiv</option>
+                  <option value="Kryvyi Rih">Kryvyi Rih</option>
+                  <option value="Kyiv" selected>Kyiv</option>
+                  <option value="Luhansk">Luhansk</option>
+                  <option value="Lviv">Lviv</option>
+                  <option value="Mykolaiv">Mykolaiv</option>
+                  <option value="Odesa">Odesa</option>
+                  <option value="Vinnytsia">Vinnytsia</option>
+                  <option value="Zaporizhzhia">Zaporizhzhia</option>
+                </select>
+              </label>
+            </fieldset>
+            <fieldset class="form-field">
+              <legend class="legend">Delivery</legend>
+              <div class="btn-container">
+                <button class="delivery" type="button">
+                  Delivery to department of Nova Poshta</button
+                ><button class="delivery right" type="button">
+                  Delivery by courier of Nova Poshta
+                </button>
+              </div>
+              <label class="order-label"
+                >Select department
+                <select class="order-input select" name="department">
+                  <option value="" disabled selected hidden>Department</option>
+                  <option value="1">Department 1</option>
+                  <option value="2">Department 2</option>
+                  <option value="3">Department 3</option>
+                </select>
+              </label>
+            </fieldset>
+            <fieldset class="form-field">
+              <legend class="legend">Payment method</legend>
+              <div class="payment-container">
+                <input
+                  class="visually-hidden"
+                  type="radio"
+                  name="payment-method"
+                  value="card"
+                  id="input-radio"
+                /><label class="radio-label" for="input-radio"
+                  >Credit card (Visa, Mastercard, ApplePay)</label
+                ><input
+                  class="visually-hidden"
+                  type="radio"
+                  name="payment-method"
+                  value="cash"
+                  id="input-radio-second"
+                />
+                <label class="radio-label" for="input-radio-second"
+                  >Cash on delivery</label
+                >
+
+                <label><a href=""></a><input type="text" /></label>
+              </div>
+            </fieldset>
+          </form>
+        </div>
+      </div>
     </main>
 
     <footer class="footer">
