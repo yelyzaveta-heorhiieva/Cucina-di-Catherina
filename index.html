@@ -532,7 +532,7 @@
                 </select>
               </label>
             </fieldset>
-            <fieldset class="form-field">
+            <fieldset class="form-field last">
               <legend class="legend">Payment method</legend>
               <div class="payment-container">
                 <input
@@ -554,9 +554,35 @@
                   >Cash on delivery</label
                 >
 
-                <label><a href=""></a><input type="text" /></label>
+                <label
+                  ><a
+                    class="comment-link"
+                    href="#comment"
+                    onclick="document.getElementById('comment').classList.add('visible')"
+                    >Add a comment to the order</a
+                  >
+                  <textarea
+                    class="comment-field hidden"
+                    name="comment"
+                    id="comment"
+                    rows="3"
+                  ></textarea>
+                </label>
+
+                <input
+                  type="checkbox"
+                  name="call"
+                  id="call"
+                  value="true"
+                  class="visually-hidden"
+                />
+                <label for="call" class="checkbox-label">
+                  <span class="check-mark">&#10004</span>
+                  Do not call to confirm
+                </label>
               </div>
             </fieldset>
+            <button class="order-btn" type="submit">Buy now</button>
           </form>
         </div>
       </div>
