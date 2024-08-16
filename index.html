@@ -480,6 +480,7 @@
                   type="text"
                   placeholder="Krutas"
                   name="user-surname"
+                  required
                 />
               </label>
               <label class="order-label">
@@ -489,6 +490,7 @@
                   type="text"
                   placeholder="Yuliia"
                   name="user-name"
+                  required
               /></label>
               <label class="order-label"
                 >Telephone<input
@@ -496,11 +498,12 @@
                   type="tel"
                   name="user-tel"
                   placeholder="+380"
+                  required
               /></label>
               <label class="order-label"
                 >City
                 <div class="select-container">
-                  <select class="order-input select" name="city">
+                  <select class="order-input select" name="city" required>
                     <option value="Chernihiv">Chernihiv</option>
                     <option value="Dnipro">Dnipro</option>
                     <option value="Kharkiv">Kharkiv</option>
@@ -531,7 +534,7 @@
               <label class="order-label"
                 >Select department
                 <div class="select-container">
-                  <select class="order-input select" name="department">
+                  <select class="order-input select" name="department" required>
                     <option value="" disabled selected hidden>
                       Department
                     </option>
@@ -555,6 +558,7 @@
                   value="card"
                   id="input-radio"
                   checked
+                  required
                 /><label class="radio-label" for="input-radio"
                   >Credit card (Visa, Mastercard, ApplePay)</label
                 ><input
@@ -563,6 +567,7 @@
                   name="payment-method"
                   value="cash"
                   id="input-radio-second"
+                  required
                 />
                 <label class="radio-label" for="input-radio-second"
                   >Cash on delivery</label

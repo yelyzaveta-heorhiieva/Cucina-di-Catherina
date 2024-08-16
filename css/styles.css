@@ -181,6 +181,14 @@ button {
   font-weight: 800;
   font-size: 16px;
   background-color: transparent;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.contact-btn:hover,
+.contact-btn:focus {
+  border-color: rgba(188, 26, 26, 0.5);
+  color: rgba(188, 26, 26, 0.5);
 }
 
 /* #region Hero */
@@ -529,6 +537,7 @@ button {
 }
 /* #endregion Gallery */
 
+/* #region Ordering Overflay */
 .ordering-overflay {
   position: fixed;
   top: 0;
@@ -557,6 +566,7 @@ button {
   transform: translate(-50%, 0);
   border-radius: 16px;
   width: 414px;
+  min-height: 1272px;
   background-color: #100f0f;
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   padding: 60px 15px;
@@ -604,7 +614,9 @@ button {
 }
 
 .order-input:hover,
-.order-input:focus {
+.order-input:focus,
+.comment-field:focus,
+.comment-field:hover {
   border-color: rgba(188, 26, 26, 0.5);
 }
 
@@ -703,6 +715,7 @@ input[type='radio']:checked + .radio-label::before {
 }
 
 .comment-field {
+  outline: transparent;
   margin-top: 20px;
   border: 1px solid #f3f3f3;
   border-radius: 16px;
@@ -712,6 +725,7 @@ input[type='radio']:checked + .radio-label::before {
   padding: 16px;
   font-size: 16px;
   color: #999ea3;
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .hidden {
@@ -755,7 +769,14 @@ input[type='checkbox']:checked + .checkbox-label .check-mark {
   font-weight: 700;
   font-size: 20px;
   border: none;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+
+.order-btn:hover,
+.order-btn:focus {
+  background-color: rgba(188, 26, 26, 0.5);
+}
+/* #endregion Ordering Overflay */
 
 /* #region Footer */
 .footer {
@@ -1153,6 +1174,16 @@ input[type='checkbox']:checked + .checkbox-label .check-mark {
   .footer-text {
     font-size: 14px;
     line-height: 1.21;
+  }
+
+  .ordering {
+    width: 504px;
+    padding: 60px 60px;
+  }
+
+  .close-btn.mark {
+    top: 28px;
+    right: 28px;
   }
 }
 
