@@ -498,19 +498,25 @@
                   placeholder="+380"
               /></label>
               <label class="order-label"
-                >City<select class="order-input select" name="city">
-                  <option value="Chernihiv">Chernihiv</option>
-                  <option value="Dnipro">Dnipro</option>
-                  <option value="Kharkiv">Kharkiv</option>
-                  <option value="Kryvyi Rih">Kryvyi Rih</option>
-                  <option value="Kyiv" selected>Kyiv</option>
-                  <option value="Luhansk">Luhansk</option>
-                  <option value="Lviv">Lviv</option>
-                  <option value="Mykolaiv">Mykolaiv</option>
-                  <option value="Odesa">Odesa</option>
-                  <option value="Vinnytsia">Vinnytsia</option>
-                  <option value="Zaporizhzhia">Zaporizhzhia</option>
-                </select>
+                >City
+                <div class="select-container">
+                  <select class="order-input select" name="city">
+                    <option value="Chernihiv">Chernihiv</option>
+                    <option value="Dnipro">Dnipro</option>
+                    <option value="Kharkiv">Kharkiv</option>
+                    <option value="Kryvyi Rih">Kryvyi Rih</option>
+                    <option value="Kyiv" selected>Kyiv</option>
+                    <option value="Luhansk">Luhansk</option>
+                    <option value="Lviv">Lviv</option>
+                    <option value="Mykolaiv">Mykolaiv</option>
+                    <option value="Odesa">Odesa</option>
+                    <option value="Vinnytsia">Vinnytsia</option>
+                    <option value="Zaporizhzhia">Zaporizhzhia</option>
+                  </select>
+                  <svg class="select-icon" width="8" height="4">
+                    <use href="./images/icons.svg#select"></use>
+                  </svg>
+                </div>
               </label>
             </fieldset>
             <fieldset class="form-field">
@@ -524,12 +530,19 @@
               </div>
               <label class="order-label"
                 >Select department
-                <select class="order-input select" name="department">
-                  <option value="" disabled selected hidden>Department</option>
-                  <option value="1">Department 1</option>
-                  <option value="2">Department 2</option>
-                  <option value="3">Department 3</option>
-                </select>
+                <div class="select-container">
+                  <select class="order-input select" name="department">
+                    <option value="" disabled selected hidden>
+                      Department
+                    </option>
+                    <option value="1">Department 1</option>
+                    <option value="2">Department 2</option>
+                    <option value="3">Department 3</option>
+                  </select>
+                  <svg class="select-icon" width="8" height="4">
+                    <use href="./images/icons.svg#select"></use>
+                  </svg>
+                </div>
               </label>
             </fieldset>
             <fieldset class="form-field last">
@@ -541,6 +554,7 @@
                   name="payment-method"
                   value="card"
                   id="input-radio"
+                  checked
                 /><label class="radio-label" for="input-radio"
                   >Credit card (Visa, Mastercard, ApplePay)</label
                 ><input
@@ -577,7 +591,9 @@
                   class="visually-hidden"
                 />
                 <label for="call" class="checkbox-label">
-                  <span class="check-mark">&#10004</span>
+                  <svg class="check-mark" width="10" height="8">
+                    <use href="./images/icons.svg#check"></use>
+                  </svg>
                   Do not call to confirm
                 </label>
               </div>
