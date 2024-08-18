@@ -33,15 +33,25 @@
             <li><a class="nav-link" href="#gallery">Gallery</a></li>
           </ul>
         </nav>
-        <button class="header-btn" type="button">Contact us</button>
-        <button class="menu-btn" type="button">
+        <button
+          class="header-btn"
+          type="button"
+          onclick="document.getElementById('contact-overflay').classList.add('is-open')"
+        >
+          Contact us
+        </button>
+        <button
+          class="menu-btn"
+          type="button"
+          onclick="document.getElementById('header-menu').classList.add('is-open')"
+        >
           <svg width="31" height="18" class="btn-icon">
             <use href="./images/icons.svg#menu"></use>
           </svg>
         </button>
       </div>
 
-      <div class="header-menu is-open">
+      <div class="header-menu" id="header-menu">
         <div class="menu">
           <div class="menu-top">
             <a class="logo-menu" href="./index.html">
@@ -50,7 +60,11 @@
               </svg>
               CUCINA
             </a>
-            <button class="close-btn" type="button">
+            <button
+              class="close-btn"
+              type="button"
+              onclick="document.getElementById('header-menu').classList.remove('is-open')"
+            >
               <svg class="close-icon" width="18" height="18">
                 <use href="./images/icons.svg#close"></use>
               </svg>
@@ -62,13 +76,23 @@
             <li><a class="menu-link" href="#recipes">Recipes</a></li>
             <li><a class="menu-link" href="#gallery">Gallery</a></li>
           </ul>
-          <button class="contact-btn" type="button">Contact us</button>
+          <button
+            class="contact-btn"
+            type="button"
+            onclick="document.getElementById('contact-overflay').classList.add('is-open')"
+          >
+            Contact us
+          </button>
         </div>
       </div>
 
-      <div class="contact-overflay is-open">
+      <div class="contact-overflay" id="contact-overflay">
         <div class="contact">
-          <button class="close-btn feedback" type="button">
+          <button
+            class="close-btn feedback"
+            type="button"
+            onclick="document.getElementById('contact-overflay').classList.remove('is-open')"
+          >
             <svg class="close-icon" width="18" height="18">
               <use href="./images/icons.svg#close"></use>
             </svg>
@@ -125,7 +149,13 @@
             <span class="span"
               >you will <span class="love">love</span> our product</span
             >
-            <button class="hero-btn" type="button">Buy now</button>
+            <button
+              class="hero-btn"
+              type="button"
+              onclick="document.getElementById('ordering-overflay').classList.add('is-open')"
+            >
+              Buy now
+            </button>
             <ul class="hero-list">
               <li class="hero-list-item">
                 <span class="hero-span">14 </span>
@@ -226,7 +256,13 @@
                     The most delicate taste of tomatoes, combined with branded
                     spices and white wine, will make your dish incredibly tasty.
                   </p>
-                  <button class="products-btn" type="button">Buy now</button>
+                  <button
+                    class="products-btn"
+                    type="button"
+                    onclick="document.getElementById('ordering-overflay').classList.add('is-open')"
+                  >
+                    Buy now
+                  </button>
                 </div>
               </li>
               <li class="products-list-item">
@@ -256,7 +292,13 @@
                     For thrill-seekers, we added hot chili pepper to our sauce,
                     it also reveals all the tastes and aromas of the sauce well.
                   </p>
-                  <button class="products-btn" type="button">Buy now</button>
+                  <button
+                    class="products-btn"
+                    type="button"
+                    onclick="document.getElementById('ordering-overflay').classList.add('is-open')"
+                  >
+                    Buy now
+                  </button>
                 </div>
               </li>
             </ul>
@@ -564,9 +606,13 @@
         </div>
       </section>
 
-      <div class="ordering-overflay is-open">
+      <div class="ordering-overflay" id="ordering-overflay">
         <div class="ordering">
-          <button class="close-btn mark" type="button">
+          <button
+            class="close-btn mark"
+            type="button"
+            onclick="document.getElementById('ordering-overflay').classList.remove('is-open')"
+          >
             <svg class="close-icon" width="18" height="18">
               <use href="./images/icons.svg#close"></use>
             </svg>

@@ -314,12 +314,12 @@ button {
   margin: 0 auto;
 }
 
-@media (min-resolution: 192dpi) {
+/* @media (min-resolution: 192dpi) {
   .hero {
     background-image: url(../images/hero-bg@2x.png),
       linear-gradient(235deg, #6f6666 0%, #100f0f 50%);
   }
-}
+} */
 
 .hero-container {
   position: relative;
