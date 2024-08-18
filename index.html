@@ -41,7 +41,7 @@
         </button>
       </div>
 
-      <!-- <div class="header-menu is-open">
+      <div class="header-menu is-open">
         <div class="menu">
           <div class="menu-top">
             <a class="logo-menu" href="./index.html">
@@ -64,7 +64,57 @@
           </ul>
           <button class="contact-btn" type="button">Contact us</button>
         </div>
-      </div> -->
+      </div>
+
+      <div class="contact-overflay is-open">
+        <div class="contact">
+          <button class="close-btn feedback" type="button">
+            <svg class="close-icon" width="18" height="18">
+              <use href="./images/icons.svg#close"></use>
+            </svg>
+          </button>
+          <p class="contact-title">
+            Leave your contacts and we will contact you
+          </p>
+          <form class="contact-form" name="contact-form">
+            <label class="contact-label"
+              >Name<input
+                class="contact-input"
+                type="text"
+                name="user-name"
+                placeholder="Yuliia"
+                title="Yuliia"
+                pattern="[a-zA-Zа-яА-ЯіІїЇєЄґҐʼ]+"
+                required /></label
+            ><label class="contact-label"
+              >Telephone<input
+                class="contact-input"
+                type="tel"
+                name="user-tel"
+                placeholder="+380"
+                title="+380971111111"
+                pattern="^\+380\d{9}$"
+                required /></label
+            ><label class="contact-label"
+              >Email<input
+                class="contact-input"
+                type="email"
+                name="user-email"
+                placeholder="Contact@gmail.com"
+                required /></label
+            ><label class="contact-label">
+              <textarea
+                class="contact-input text"
+                name="coment"
+                placeholder="How can we help you?"
+                required
+              ></textarea></label
+            ><button class="contact-overflay-btn" type="submit">
+              Contact us
+            </button>
+          </form>
+        </div>
+      </div>
     </header>
     <main>
       <section class="hero">
@@ -89,8 +139,14 @@
             </ul>
           </div>
           <picture>
-            <source srcset="./images/hero.png 1x" media="(min-width: 1020px)" />
-            <source srcset="./images/ketchup.png" media="(max-width: 1019px)" />
+            <source
+              srcset="./images/hero.png 1x, ./images/hero@2x.png 2x"
+              media="(min-width: 1020px)"
+            />
+            <source
+              srcset="./images/ketchup.png 1x, ./images/ketchup@2x.png 2x"
+              media="(max-width: 1019px)"
+            />
 
             <img
               class="hero-img"
@@ -146,11 +202,14 @@
               <li class="products-list-item">
                 <picture>
                   <source
-                    srcset="./images/tab/tomatos-tab.jpg 1x"
+                    srcset="
+                      ./images/tab/tomatos-tab.jpg   1x,
+                      ./images/tab/tomato-tab@2x.jpg 2x
+                    "
                     media="(min-width: 1020px)"
                   />
                   <source
-                    srcset="./images/tomatos.jpg"
+                    srcset="./images/tomatos.jpg 1x, ./images/tomato@2x.jpg 2x"
                     media="(max-width: 1019px)"
                   />
                   <img
@@ -173,11 +232,14 @@
               <li class="products-list-item">
                 <picture>
                   <source
-                    srcset="./images/tab/peper-tab.jpg 1x"
+                    srcset="
+                      ./images/tab/peper-tab.jpg    1x,
+                      ./images/tab/peper-tab@2x.jpg 2x
+                    "
                     media="(min-width: 1020px)"
                   />
                   <source
-                    srcset="./images/peper.jpg"
+                    srcset="./images/peper.jpg 1x, ./images/peper@2x.jpg 2x"
                     media="(max-width: 1019px)"
                   />
                   <img
@@ -202,11 +264,14 @@
               <li class="products-list-item">
                 <picture>
                   <source
-                    srcset="./images/tab/sauce-tab.jpg 1x"
+                    srcset="
+                      ./images/tab/sauce-tab.jpg    1x,
+                      ./images/tab/sauce-tab@2x.jpg 2x
+                    "
                     media="(min-width: 1020px)"
                   />
                   <source
-                    srcset="./images/sauce.jpg"
+                    srcset="./images/sauce.jpg 1x, ./images/sauce@2x.jpg 2x"
                     media="(max-width: 1019px)"
                   />
                   <img
@@ -229,11 +294,17 @@
               <li class="products-list-item">
                 <picture>
                   <source
-                    srcset="./images/tab/peper-sauce-tab.jpg 1x"
+                    srcset="
+                      ./images/tab/peper-sauce-tab.jpg    1x,
+                      ./images/tab/peper-sauce-tab@2x.jpg 2x
+                    "
                     media="(min-width: 1020px)"
                   />
                   <source
-                    srcset="./images/peper-sauce.jpg"
+                    srcset="
+                      ./images/peper-sauce.jpg    1x,
+                      ./images/peper-sauce@2x.jpg 2x
+                    "
                     media="(max-width: 1019px)"
                   />
                   <img
@@ -258,11 +329,17 @@
               <li class="products-list-item">
                 <picture>
                   <source
-                    srcset="./images/tab/tomato-sauce-tab.jpg 1x"
+                    srcset="
+                      ./images/tab/tomato-sauce-tab.jpg    1x,
+                      ./images/tab/tomato-sauce-tab@2x.jpg 2x
+                    "
                     media="(min-width: 1020px)"
                   />
                   <source
-                    srcset="./images/tomato-sauce.jpg"
+                    srcset="
+                      ./images/tomato-sauce.jpg    1x,
+                      ./images/tomato-sauce@2x.jpg 2x
+                    "
                     media="(max-width: 1019px)"
                   />
                   <img
@@ -285,11 +362,17 @@
               <li class="products-list-item">
                 <picture>
                   <source
-                    srcset="./images/tab/sause-spoon-tab.jpg 1x"
+                    srcset="
+                      ./images/tab/sauce-spoon-tab.jpg       1x,
+                      ./images/tab/sauce-in-spoon-tab@2x.jpg 2x
+                    "
                     media="(min-width: 1020px)"
                   />
                   <source
-                    srcset="./images/sauce-in-spoon.jpg"
+                    srcset="
+                      ./images/sauce-in-spoon.jpg    1x,
+                      ./images/sauce-in-spoon@2x.jpg 2x
+                    "
                     media="(max-width: 1019px)"
                   />
                   <img
@@ -388,15 +471,21 @@
           <div class="img-container">
             <picture class="picture">
               <source
-                srcset="./images/desk/growing-desk.jpg 1x"
+                srcset="
+                  ./images/desk/growing-desk.jpg    1x,
+                  ./images/desk/growing-desk@2x.jpg 2x
+                "
                 media="(min-width: 1280px)"
               />
               <source
-                srcset="./images/tab/growing-tab.jpg 1x"
+                srcset="
+                  ./images/tab/growing-tab.jpg    1x,
+                  ./images/tab/growing-tab@2x.jpg 2x
+                "
                 media="(min-width: 1020px)"
               />
               <source
-                srcset="./images/growing-mob.jpg"
+                srcset="./images/growing-mob.jpg 1x, ./images/growing@2x.jpg 2x"
                 media="(max-width: 1279px)"
               />
               <img
@@ -409,15 +498,24 @@
 
             <picture class="picture">
               <source
-                srcset="./images/desk/girls-tomato-desk.jpg 1x"
+                srcset="
+                  ./images/desk/girls-tomato-desk.jpg    1x,
+                  ./images/desk/girls-tomato-desk@2x.jpg 2x
+                "
                 media="(min-width: 1280px)"
               />
               <source
-                srcset="./images/tab/girls-tomato-tab.jpg 1x"
+                srcset="
+                  ./images/tab/girls-tomato-tab.jpg    1x,
+                  ./images/tab/girls-tomato-tab@2x.jpg 2x
+                "
                 media="(min-width: 1020px)"
               />
               <source
-                srcset="./images/girls-tomato-mob.jpg"
+                srcset="
+                  ./images/girls-tomato-mob.jpg 1x,
+                  ./images/girls-tomato@2x.jpg  2x
+                "
                 media="(max-width: 1279px)"
               />
               <img
@@ -430,15 +528,24 @@
 
             <picture class="picture">
               <source
-                srcset="./images/desk/man-tomato-desk.jpg 1x"
+                srcset="
+                  ./images/desk/man-tomato-desk.jpg    1x,
+                  ./images/desk/man-tomato-desk@2x.jpg 2x
+                "
                 media="(min-width: 1280px)"
               />
               <source
-                srcset="./images/tab/man-tomato-tab.jpg 1x"
+                srcset="
+                  ./images/tab/man-tomato-tab.jpg    1x,
+                  ./images/tab/man-tomato-tab@2x.jpg 2x
+                "
                 media="(min-width: 1020px)"
               />
               <source
-                srcset="./images/man-tomato-mob.jpg"
+                srcset="
+                  ./images/man-tomato-mob.jpg 1x,
+                  /images/man-tomato@2x.jpg   2x
+                "
                 media="(max-width: 1019px)"
               />
               <img
@@ -465,12 +572,7 @@
             </svg>
           </button>
           <p class="ordering-title">Your ordering</p>
-          <form
-            class="order-form"
-            name="order-form"
-            autocomplete="off"
-            novalidate
-          >
+          <form class="order-form" name="order-form">
             <fieldset class="form-field">
               <legend class="legend">Contacts</legend>
               <label class="order-label">
@@ -480,6 +582,8 @@
                   type="text"
                   placeholder="Krutas"
                   name="user-surname"
+                  title="Krutas"
+                  pattern="[a-zA-Zа-яА-ЯіІїЇєЄґҐʼ]+"
                   required
                 />
               </label>
@@ -490,6 +594,8 @@
                   type="text"
                   placeholder="Yuliia"
                   name="user-name"
+                  title="Yuliia"
+                  pattern="[a-zA-Zа-яА-ЯіІїЇєЄґҐʼ]+"
                   required
               /></label>
               <label class="order-label"
@@ -498,6 +604,8 @@
                   type="tel"
                   name="user-tel"
                   placeholder="+380"
+                  title="+380971111111"
+                  pattern="^\+380\d{9}$"
                   required
               /></label>
               <label class="order-label"
@@ -525,12 +633,29 @@
             <fieldset class="form-field">
               <legend class="legend">Delivery</legend>
               <div class="btn-container">
-                <button class="delivery" type="button">
-                  Delivery to department of Nova Poshta</button
-                ><button class="delivery right" type="button">
-                  Delivery by courier of Nova Poshta
-                </button>
+                <input
+                  class="visually-hidden"
+                  type="radio"
+                  name="delivery"
+                  value="department"
+                  id="department"
+                  required
+                  checked
+                /><label class="delivery" for="department"
+                  >Delivery to department of Nova Poshta</label
+                ><input
+                  class="visually-hidden"
+                  type="radio"
+                  name="delivery"
+                  value="courier"
+                  id="courier"
+                  required
+                />
+                <label class="delivery right" for="courier"
+                  >Delivery by courier of Nova Poshta</label
+                >
               </div>
+
               <label class="order-label"
                 >Select department
                 <div class="select-container">
